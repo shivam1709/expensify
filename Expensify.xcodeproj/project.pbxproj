@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
-		ADD49EAE2885A6F200EE2CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* ViewController.swift */; };
+		ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */; };
 		ADD49EB12885A6F200EE2CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EAF2885A6F200EE2CAB /* Main.storyboard */; };
 		ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */; };
 		ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB52885A6F300EE2CAB /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADD49EAD2885A6F200EE2CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
 		ADD49EB02885A6F200EE2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADD49EB32885A6F200EE2CAB /* Expensify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expensify.xcdatamodel; sourceTree = "<group>"; };
 		ADD49EB52885A6F300EE2CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
 				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
-				ADD49EAD2885A6F200EE2CAB /* ViewController.swift */,
+				ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */,
 				ADD49EAF2885A6F200EE2CAB /* Main.storyboard */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
 				ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */,
@@ -105,7 +105,7 @@
 				};
 			};
 			buildConfigurationList = ADD49EA12885A6F200EE2CAB /* Build configuration list for PBXProject "Expensify" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD49EAE2885A6F200EE2CAB /* ViewController.swift in Sources */,
+				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */,
