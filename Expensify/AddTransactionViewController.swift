@@ -7,24 +7,33 @@
 
 import UIKit	
 import DropDown
+import FirebaseFirestore
 
 class AddTransactionViewController: UIViewController {
 
     @IBOutlet weak var incomeButton: UIButton!
-    
+    let db = Firestore.firestore()
     @IBOutlet weak var expenseButton: UIButton!
     
     @IBOutlet weak var categoriesDropDoen: UIView!
     @IBOutlet weak var listOfCategories: UILabel!
     
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var cancelButtons: UIButton!
     let dropDown = DropDown()
     let categoriesArray = ["Entertainment",
         "Groceries",
         "Rent",
         "Eating Outside",
-        "Fuel"]
+        "Fuel",
+        "Transportation",
+        "Investments",
+        "Housing",
+        "Shopping",
+        "Others"
+    ]
     
+    @IBOutlet weak var amountField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +60,10 @@ class AddTransactionViewController: UIViewController {
         dropDown.show()
     }
     
+    @IBAction func addBtn(_ sender: Any) {
+        addDataToFb();
+    }
+    
     @IBAction func incomeBtn(_ sender: UIButton) {
         if(sender.isSelected){
             sender.isSelected = false
@@ -68,6 +81,24 @@ class AddTransactionViewController: UIViewController {
         }else{
             sender.isSelected = true
             incomeButton.isSelected = false
+        }
+    }
+    
+    func addDataToFb() {
+        db.collection("user").document("userData").setData([
+            "name": "user1",
+            "amount":"50",
+            "email": "test@test.com",
+            "income":true,
+            "expense": false,
+            "category":"Fuel",
+            "date": "01/07/2022",
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
         }
     }
     /*
