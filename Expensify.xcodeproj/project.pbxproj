@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40EA2CA2891611D0015FAA6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A40EA2C92891611D0015FAA6 /* FirebaseFirestore */; };
+		A42C6B072890CBC800B9DF27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */; };
 		A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD32887142A00A45130 /* LoginScreenController.swift */; };
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4DEDCD32887142A00A45130 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40EA2CA2891611D0015FAA6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 				A4DEDCD32887142A00A45130 /* LoginScreenController.swift */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
 				ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */,
+				A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */,
 				ADD49EBA2885A6F300EE2CAB /* Info.plist */,
 				ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */,
 			);
@@ -92,6 +97,9 @@
 			dependencies = (
 			);
 			name = Expensify;
+			packageProductDependencies = (
+				A40EA2C92891611D0015FAA6 /* FirebaseFirestore */,
+			);
 			productName = Expensify;
 			productReference = ADD49EA62885A6F200EE2CAB /* Expensify.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,9 @@
 				Base,
 			);
 			mainGroup = ADD49E9D2885A6F200EE2CAB;
+			packageReferences = (
+				A40EA2C82891611D0015FAA6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ADD49EA72885A6F200EE2CAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD49EB92885A6F300EE2CAB /* LaunchScreen.storyboard in Resources */,
+				A42C6B072890CBC800B9DF27 /* GoogleService-Info.plist in Resources */,
 				ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */,
 				ADD49EB12885A6F200EE2CAB /* Main.storyboard in Resources */,
 			);
@@ -351,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A40EA2C82891611D0015FAA6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A40EA2C92891611D0015FAA6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A40EA2C82891611D0015FAA6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */ = {
