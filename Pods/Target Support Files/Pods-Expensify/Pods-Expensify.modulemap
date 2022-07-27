@@ -1,0 +1,6 @@
+framework module Pods_Expensify {
+  umbrella header "Pods-Expensify-umbrella.h"
+
+  export *
+  module * { export * }
+}
