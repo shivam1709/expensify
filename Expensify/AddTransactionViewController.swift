@@ -17,6 +17,7 @@ class AddTransactionViewController: UIViewController {
     @IBOutlet weak var categoriesDropDoen: UIView!
     @IBOutlet weak var listOfCategories: UILabel!
     
+    @IBOutlet weak var cancelButtons: UIButton!
     let dropDown = DropDown()
     let categoriesArray = ["Entertainment",
         "Groceries",
@@ -29,6 +30,8 @@ class AddTransactionViewController: UIViewController {
         super.viewDidLoad()
         listOfCategories.text = "Select Any Category"
         dropDown.anchorView = categoriesDropDoen
+        cancelButtons.layer.cornerRadius = 10
+        cancelButtons.clipsToBounds = true
         let cancelButton = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         cancelButton.layer.borderWidth = 10
         cancelButton.layer.borderColor = UIColor.black.cgColor
