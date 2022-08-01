@@ -509,6 +509,7 @@
                         <outlet property="expenseButton" destination="cF6-0B-cYM" id="Gwf-je-XtN"/>
                         <outlet property="incomeButton" destination="UER-Py-RDL" id="0EF-57-MgP"/>
                         <outlet property="listOfCategories" destination="vcU-KZ-2QO" id="g5h-KS-IwJ"/>
+                        <outlet property="txtDatePicker" destination="evY-Um-p6Q" id="2Z1-dm-5p5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m52-21-Ha2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

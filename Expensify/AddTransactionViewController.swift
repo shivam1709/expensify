@@ -1,4 +1,4 @@
-//
+	//
 //  AddTransactionViewController.swift
 //  Expensify
 //
@@ -35,6 +35,9 @@ class AddTransactionViewController: UIViewController {
     
     @IBOutlet weak var amountField: UITextField!
     
+    @IBOutlet weak var txtDatePicker: UILabel!
+    let datePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listOfCategories.text = "Select Any Category"
@@ -44,6 +47,12 @@ class AddTransactionViewController: UIViewController {
         let cancelButton = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         cancelButton.layer.borderWidth = 10
         cancelButton.layer.borderColor = UIColor.black.cgColor
+        
+        // tap gesture to dismiss keyboard
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+           view.addGestureRecognizer(tap)
+        
         dropDown.dataSource = categoriesArray
         
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)! )
@@ -56,6 +65,13 @@ class AddTransactionViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    //function for minimize keyboard when return button pressed
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder() // dismiss keyboard
+            return true
+        }
+    
     @IBAction func dropDownBtn(_ sender: Any) {
         dropDown.show()
     }
@@ -84,6 +100,36 @@ class AddTransactionViewController: UIViewController {
         }
     }
     
+    func showDatePicker(){
+      //Formate Date
+      datePicker.datePickerMode = .date
+
+     //ToolBar
+     let toolbar = UIToolbar();
+     toolbar.sizeToFit()
+     let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+    let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+
+   toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+
+    txtDatePicker.inputAccessoryView = toolbar
+    txtDatePicker.inputView = datePicker
+
+   }
+
+    @objc func donedatePicker(){
+
+     let formatter = DateFormatter()
+     formatter.dateFormat = "dd/MM/yyyy"
+     txtDatePicker.text = formatter.string(from: datePicker.date)
+     self.view.endEditing(true)
+   }
+
+   @objc func cancelDatePicker(){
+      self.view.endEditing(true)
+    }
+  }
     func addDataToFb() {
         db.collection("user").document("userData").setData([
             "name": "user1",
@@ -110,5 +156,3 @@ class AddTransactionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
