@@ -36,9 +36,8 @@ class AddTransactionViewController: UIViewController {
     
     @IBOutlet weak var amountField: UITextField!
     
+ 
     @IBOutlet weak var datePickerTextField: UITextField!
-    
-    let date = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,17 +67,22 @@ class AddTransactionViewController: UIViewController {
         }
       
         self.datePickerTextField.datePicker(target: self,
-                                  doneAction: #selector(doneAction),
-                                  cancelAction: #selector(cancelAction),
-                                  datePickerMode: .date)
+                                         doneAction: #selector(doneAction),
+                                         cancelAction: #selector(cancelAction),
+                                         datePickerMode: .date)
+        
+        datePickerTextField.attributedPlaceholder = NSAttributedString(
+            string: "Select Date",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]
+        )
         // Do any additional setup after loading the view.
     }
-    
+
     @objc
         func cancelAction() {
             self.datePickerTextField.resignFirstResponder()
         }
-
+// DATE PICKER DONE BUTTON
         @objc
         func doneAction() {
             if let datePickerView = self.datePickerTextField.inputView as? UIDatePicker {
@@ -93,6 +97,7 @@ class AddTransactionViewController: UIViewController {
                 self.datePickerTextField.resignFirstResponder()
             }
         }
+    
     @objc func didTapView(){
       self.view.endEditing(true)
     }
@@ -133,14 +138,14 @@ class AddTransactionViewController: UIViewController {
   		
 
     func addDataToFb() {
-        db.collection("user").document("userData").setData([
-            "name": "sshivam",
+        db.collection("user").document().setData([
+            "name": "hingu",
             "amount":amountField.text,
             "email": "test@test.com",
             "income":true,
             "expense": false,
-            "category":"Fuel",
-            "date": "01/07/2022",
+            "category":self.listOfCategories.text,
+            "date":self.datePickerTextField.text ,
         ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")

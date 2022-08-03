@@ -14,6 +14,9 @@ class LoginScreenController: UIViewController {
     
     @IBOutlet weak var txtPassword: UITextField!
     
+    @IBAction func signup(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let db = Firestore.firestore()
