@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		812CFB2D001AB229AEEA2BC4 /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11F445C938386BDB47E8D4 /* Pods_Expensify.framework */; };
 		A40EA2CA2891611D0015FAA6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A40EA2C92891611D0015FAA6 /* FirebaseFirestore */; };
-		A40EA2D128917DE90015FAA6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D028917DE90015FAA6 /* AddTransactionViewController.swift */; };
 		A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D32891820C0015FAA6 /* ViewController.swift */; };
 		A40EA2DA289184D30015FAA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40EA2D9289184D30015FAA6 /* TableViewCell.xib */; };
 		A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2DC289184E50015FAA6 /* TableViewCell.swift */; };
 		A42C6B072890CBC800B9DF27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */; };
+		A4C758172896342300211B8A /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C758162896342300211B8A /* Validation.swift */; };
 		A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD32887142A00A45130 /* LoginScreenController.swift */; };
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
+		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
+		A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC9D6428937AD4007D46A8 /* ViewModel.swift */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
 		ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */; };
@@ -27,13 +29,15 @@
 
 /* Begin PBXFileReference section */
 		278409CE9260F92B94037DE8 /* Pods-Expensify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.release.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.release.xcconfig"; sourceTree = "<group>"; };
-		A40EA2D028917DE90015FAA6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		A40EA2D32891820C0015FAA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A40EA2D9289184D30015FAA6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A40EA2DC289184E50015FAA6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4C758162896342300211B8A /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A4DEDCD32887142A00A45130 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
+		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		A4FC9D6428937AD4007D46A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A4FC9D63289379FC007D46A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4FC9D6428937AD4007D46A8 /* ViewModel.swift */,
+				A4C758162896342300211B8A /* Validation.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		ADD49E9D2885A6F200EE2CAB = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,7 @@
 		ADD49EA82885A6F200EE2CAB /* Expensify */ = {
 			isa = PBXGroup;
 			children = (
+				A4FC9D63289379FC007D46A8 /* ViewModels */,
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
 				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
 				ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */,
@@ -97,9 +111,9 @@
 				A40EA2D32891820C0015FAA6 /* ViewController.swift */,
 				A40EA2D9289184D30015FAA6 /* TableViewCell.xib */,
 				A40EA2DC289184E50015FAA6 /* TableViewCell.swift */,
-				A40EA2D028917DE90015FAA6 /* AddTransactionViewController.swift */,
 				A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */,
 				A4DEDCD32887142A00A45130 /* LoginScreenController.swift */,
+				A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
 				ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */,
 				A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */,
@@ -239,13 +253,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */,
+				A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */,
 				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
+				A4C758172896342300211B8A /* Validation.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
 				A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */,
-				A40EA2D128917DE90015FAA6 /* AddTransactionViewController.swift in Sources */,
 				A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */,
 				ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */,
 			);
