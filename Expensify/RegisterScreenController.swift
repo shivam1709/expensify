@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import SwiftUI
+import FirebaseAuth
 
 class RegisterScreenController: UIViewController {
 
