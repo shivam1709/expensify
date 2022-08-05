@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		812CFB2D001AB229AEEA2BC4 /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11F445C938386BDB47E8D4 /* Pods_Expensify.framework */; };
 		A40EA2CA2891611D0015FAA6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A40EA2C92891611D0015FAA6 /* FirebaseFirestore */; };
 		A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D32891820C0015FAA6 /* ViewController.swift */; };
 		A40EA2DA289184D30015FAA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40EA2D9289184D30015FAA6 /* TableViewCell.xib */; };
 		A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2DC289184E50015FAA6 /* TableViewCell.swift */; };
-		A42C6B072890CBC800B9DF27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */; };
 		A4C758172896342300211B8A /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C758162896342300211B8A /* Validation.swift */; };
 		A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD32887142A00A45130 /* LoginScreenController.swift */; };
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
 		A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC9D6428937AD4007D46A8 /* ViewModel.swift */; };
+		A4FD9428289C0B65003CCCAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4FD9427289C0B65003CCCAD /* GoogleService-Info.plist */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
 		ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */; };
@@ -25,19 +24,22 @@
 		ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */; };
 		ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB52885A6F300EE2CAB /* Assets.xcassets */; };
 		ADD49EB92885A6F300EE2CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */; };
+		E0248D241E01896E321112B0 /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804963B7C96A8F0CD5A6252C /* Pods_Expensify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		278409CE9260F92B94037DE8 /* Pods-Expensify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.release.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.release.xcconfig"; sourceTree = "<group>"; };
+		5A8DB6D80AB33E9613623005 /* Pods-Expensify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.debug.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.debug.xcconfig"; sourceTree = "<group>"; };
+		804963B7C96A8F0CD5A6252C /* Pods_Expensify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expensify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C221A6DEFBDC1076721CDE0 /* Pods-Expensify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.release.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.release.xcconfig"; sourceTree = "<group>"; };
 		A40EA2D32891820C0015FAA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A40EA2D9289184D30015FAA6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A40EA2DC289184E50015FAA6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4C758162896342300211B8A /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A4DEDCD32887142A00A45130 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		A4FC9D6428937AD4007D46A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A4FD9427289C0B65003CCCAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +49,6 @@
 		ADD49EB52885A6F300EE2CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD49EB82885A6F300EE2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD49EBA2885A6F300EE2CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9750389D45800E207F8B81F /* Pods-Expensify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.debug.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.debug.xcconfig"; sourceTree = "<group>"; };
-		EF11F445C938386BDB47E8D4 /* Pods_Expensify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expensify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A40EA2CA2891611D0015FAA6 /* FirebaseFirestore in Frameworks */,
-				812CFB2D001AB229AEEA2BC4 /* Pods_Expensify.framework in Frameworks */,
+				E0248D241E01896E321112B0 /* Pods_Expensify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,10 +67,18 @@
 		164C0B305054026B4E28FBDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9750389D45800E207F8B81F /* Pods-Expensify.debug.xcconfig */,
-				278409CE9260F92B94037DE8 /* Pods-Expensify.release.xcconfig */,
+				5A8DB6D80AB33E9613623005 /* Pods-Expensify.debug.xcconfig */,
+				8C221A6DEFBDC1076721CDE0 /* Pods-Expensify.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4CCED0308AB1E6FDB715122A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804963B7C96A8F0CD5A6252C /* Pods_Expensify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A4FC9D63289379FC007D46A8 /* ViewModels */ = {
@@ -88,7 +96,7 @@
 				ADD49EA82885A6F200EE2CAB /* Expensify */,
 				ADD49EA72885A6F200EE2CAB /* Products */,
 				164C0B305054026B4E28FBDC /* Pods */,
-				C312940647C19A4A1D2FD825 /* Frameworks */,
+				4CCED0308AB1E6FDB715122A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,19 +124,11 @@
 				A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
 				ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */,
-				A42C6B062890CBC800B9DF27 /* GoogleService-Info.plist */,
+				A4FD9427289C0B65003CCCAD /* GoogleService-Info.plist */,
 				ADD49EBA2885A6F300EE2CAB /* Info.plist */,
 				ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */,
 			);
 			path = Expensify;
-			sourceTree = "<group>";
-		};
-		C312940647C19A4A1D2FD825 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EF11F445C938386BDB47E8D4 /* Pods_Expensify.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,11 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADD49EBD2885A6F300EE2CAB /* Build configuration list for PBXNativeTarget "Expensify" */;
 			buildPhases = (
-				1E958CE5813D534D0686477D /* [CP] Check Pods Manifest.lock */,
+				B05506A9414D3229266498D9 /* [CP] Check Pods Manifest.lock */,
 				ADD49EA22885A6F200EE2CAB /* Sources */,
 				ADD49EA32885A6F200EE2CAB /* Frameworks */,
 				ADD49EA42885A6F200EE2CAB /* Resources */,
-				2543C5E92720E9FE1708FF66 /* [CP] Embed Pods Frameworks */,
+				250EC38282896FCBDECC3D98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,7 +198,7 @@
 			files = (
 				ADD49EB92885A6F300EE2CAB /* LaunchScreen.storyboard in Resources */,
 				A40EA2DA289184D30015FAA6 /* TableViewCell.xib in Resources */,
-				A42C6B072890CBC800B9DF27 /* GoogleService-Info.plist in Resources */,
+				A4FD9428289C0B65003CCCAD /* GoogleService-Info.plist in Resources */,
 				ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */,
 				ADD49EB12885A6F200EE2CAB /* Main.storyboard in Resources */,
 			);
@@ -207,7 +207,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E958CE5813D534D0686477D /* [CP] Check Pods Manifest.lock */ = {
+		250EC38282896FCBDECC3D98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05506A9414D3229266498D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,23 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2543C5E92720E9FE1708FF66 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -407,7 +407,7 @@
 		};
 		ADD49EBE2885A6F300EE2CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9750389D45800E207F8B81F /* Pods-Expensify.debug.xcconfig */;
+			baseConfigurationReference = 5A8DB6D80AB33E9613623005 /* Pods-Expensify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,7 +426,7 @@
 		};
 		ADD49EBF2885A6F300EE2CAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 278409CE9260F92B94037DE8 /* Pods-Expensify.release.xcconfig */;
+			baseConfigurationReference = 8C221A6DEFBDC1076721CDE0 /* Pods-Expensify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
