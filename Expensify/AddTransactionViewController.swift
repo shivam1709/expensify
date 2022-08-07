@@ -36,7 +36,7 @@ class AddTransactionViewController: UIViewController {
     
     @IBOutlet weak var amountField: UITextField!
     
-    @IBOutlet weak var datePickerTextField: UITextField!
+    @IBOutlet weak var 	datePickerTextField: UITextField!
     
     let date = Date()
     

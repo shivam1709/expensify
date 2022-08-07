@@ -555,8 +555,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="0lV-47-5HV" kind="relationship" relationship="viewControllers" id="QbH-ib-Xei"/>
-                        <segue destination="saT-h3-aXw" kind="relationship" relationship="viewControllers" id="XqM-eN-xch"/>
-                        <segue destination="VUk-77-v5d" kind="relationship" relationship="viewControllers" id="8v9-7r-Rus"/>
+                        <segue destination="xcs-uN-mcP" kind="relationship" relationship="viewControllers" id="urL-0i-FJj"/>
+                        <segue destination="VUk-77-v5d" kind="relationship" relationship="viewControllers" id="Foz-4W-AoI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0S-tu-12W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -936,7 +936,7 @@
                                 <rect key="frame" x="25" y="364.33333333333331" width="378" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMx-fV-2TI">
-                                        <rect key="frame" x="2" y="3" width="359" height="34"/>
+                                        <rect key="frame" x="0.0" y="2" width="359" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.95823985339999995" green="0.83428126570000005" blue="0.43200010059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1045,7 +1045,7 @@
                         <outlet property="amountField" destination="Pq0-C2-KGd" id="DXg-K2-h9A"/>
                         <outlet property="cancelButtons" destination="cBx-ys-KmS" id="Vji-fj-S3Q"/>
                         <outlet property="categoriesDropDoen" destination="CMe-5Y-tRK" id="AaC-aF-KbD"/>
-                        <outlet property="datePickerTextField" destination="BMx-fV-2TI" id="Ohq-0r-7oK"/>
+                        <outlet property="datePickerTextField" destination="BMx-fV-2TI" id="L7p-Hs-XCJ"/>
                         <outlet property="expenseButton" destination="Mn5-8R-bpR" id="QFJ-gi-pOe"/>
                         <outlet property="incomeButton" destination="D21-WC-O58" id="vhs-0d-spR"/>
                         <outlet property="listOfCategories" destination="9v9-oi-Z0D" id="mgZ-Ek-tEA"/>
