@@ -16,7 +16,7 @@ class LoginScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let db = Firestore.firestore()
+        //let db = Firestore.firestore()
         //Settimgs for hiding keyboard while click outside
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         self.view.addGestureRecognizer(tap)

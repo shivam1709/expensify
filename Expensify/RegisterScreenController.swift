@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import SwiftUI
+import FirebaseAuth 
 
 class RegisterScreenController: UIViewController {
 
@@ -72,7 +73,7 @@ class RegisterScreenController: UIViewController {
         if validationStatus == 0
         {
          lblValidation.text = ""
-         model.addUser(name: name! , email: email! , password: password!)
+       //  model.addUser(name: name! , email: email! , password: password!)
         }
         
     }

@@ -7,4 +7,7 @@ target 'Expensify' do
 
   # Pods for Expensify
 pod 'DropDown'
+pod 'Firebase/Auth'
+pod 'Firebase', '7.7.0'
+pod 'Firebase/Firestore'	
 end
