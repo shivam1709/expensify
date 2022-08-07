@@ -133,21 +133,21 @@ class AddTransactionViewController: UIViewController {
   		
 
     func addDataToFb() {
-//        db.collection("user").document("userData").setData([
-//            "name": "sshivam",
-//            "amount":amountField.text,
-//            "email": "test@test.com",
-//            "income":true,
-//            "expense": false,
-//            "category":"Fuel",
-//            "date": "01/07/2022",
-//        ]) { err in
-//            if let err = err {
-//                print("Error writing document: \(err)")
-//            } else {
-//                print("Document successfully written!")
-//            }
-//        }
+        db.collection("user").document("userData").setData([
+            "name": "sshivam",
+            "amount":amountField.text,
+            "email": "test@test.com",
+            "income":true,
+            "expense": false,
+            "category":"Fuel",
+            "date": "01/07/2022",
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
     }
 }
     extension UITextField {
