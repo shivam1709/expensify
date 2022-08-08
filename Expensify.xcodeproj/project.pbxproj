@@ -16,6 +16,7 @@
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
 		A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC9D6428937AD4007D46A8 /* ViewModel.swift */; };
+		AA4EE87E28A1993C009EBCAD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EE87D28A1993C009EBCAD /* CollectionViewCell.swift */; };
 		AD8CDA77289FE71400C9D98F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
@@ -37,7 +38,8 @@
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		A4FC9D6428937AD4007D46A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA4EE87D28A1993C009EBCAD /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				A4FC9D63289379FC007D46A8 /* ViewModels */,
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
 				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
+				AA4EE87D28A1993C009EBCAD /* CollectionViewCell.swift */,
 				ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */,
 				ADD49EAF2885A6F200EE2CAB /* Main.storyboard */,
 				A40EA2D32891820C0015FAA6 /* ViewController.swift */,
@@ -247,6 +250,7 @@
 			files = (
 				A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */,
 				A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */,
+				AA4EE87E28A1993C009EBCAD /* CollectionViewCell.swift in Sources */,
 				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
 				A4C758172896342300211B8A /* Validation.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
