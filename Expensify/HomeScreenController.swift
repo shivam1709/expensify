@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     let monthArr:[String] = ["January","February","March","April","May","June", "July", "August", "September", "October", "November", "December"]
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,5 +33,20 @@ class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollec
         cell.monthName.text = monthArr[indexPath.row]
         return cell
     }
+    func getDataFromFB(uid:String){
+        db.collection("user").whereField("User UID", isEqualTo: uid).getDocuments(){
+        (querySnapshot,err) in
+            if let err = err{
+                print("error reading database \(err)")
+                
+            }else{
+                for document in querySnapshot!.documents{
+                    print("\(document.documentID)=>\(document.data())")
+                }
+            }
+        
+        }
+    }
+    
 }
 
