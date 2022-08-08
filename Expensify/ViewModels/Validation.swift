@@ -4,11 +4,12 @@
 //
 //  Created by user207261 on 7/30/22.
 //
-
+//class to implement validations
 import UIKit
 
 class Validation: NSObject {
     
+    //Email validation functionality
     static func isvalidEmail(input : String) -> Bool
     {
         let emailRegx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -16,7 +17,7 @@ class Validation: NSObject {
         return email.evaluate(with: input)
     }
 
-    
+    //Email validation functionality
     static func isvalidPassword(input : String) -> Bool
     {
         let pwdRegx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"

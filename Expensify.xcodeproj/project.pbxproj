@@ -15,7 +15,7 @@
 		A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD32887142A00A45130 /* LoginScreenController.swift */; };
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
-		A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FC9D6428937AD4007D46A8 /* ViewModel.swift */; };
+		A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */; };
 		AD8CDA77289FE71400C9D98F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
@@ -36,7 +36,7 @@
 		A4DEDCD32887142A00A45130 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
-		A4FC9D6428937AD4007D46A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 		A4FC9D63289379FC007D46A8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				A4FC9D6428937AD4007D46A8 /* ViewModel.swift */,
 				A4C758162896342300211B8A /* Validation.swift */,
+				A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -246,11 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */,
-				A4FC9D6528937AD4007D46A8 /* ViewModel.swift in Sources */,
 				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
 				A4C758172896342300211B8A /* Validation.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
+				A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */,
 				A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */,

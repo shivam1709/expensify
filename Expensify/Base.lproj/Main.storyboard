@@ -61,7 +61,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="W7c-PN-h8s" eventType="touchDown" id="gv9-AA-6X5"/>
-                                    <segue destination="r6M-nq-pvu" kind="presentation" modalPresentationStyle="fullScreen" id="iDf-hK-SbG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuK-nd-2A5">
@@ -93,30 +92,28 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-OB-kxs">
-                                <rect key="frame" x="-333897" y="832" width="54" height="40.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlV-ng-5IE">
+                                <rect key="frame" x="15" y="636" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="nsK-OB-kxs" secondAttribute="height" multiplier="4:3" id="iES-of-pRJ"/>
+                                    <constraint firstAttribute="width" secondItem="SlV-ng-5IE" secondAttribute="height" multiplier="398:22" id="XzE-zK-MTu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Sign up">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Iby-S9-kH6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uPK-FB-wgR" firstAttribute="top" secondItem="iDM-gq-85j" secondAttribute="bottom" constant="44" id="0Za-im-tme"/>
-                            <constraint firstItem="nsK-OB-kxs" firstAttribute="width" secondItem="nsK-OB-kxs" secondAttribute="height" multiplier="4:3" id="2Ry-Ja-XZc"/>
                             <constraint firstItem="JuK-nd-2A5" firstAttribute="top" secondItem="Iby-S9-kH6" secondAttribute="top" constant="14" id="4pC-qD-dgy"/>
                             <constraint firstItem="JuK-nd-2A5" firstAttribute="centerX" secondItem="pFQ-At-UjM" secondAttribute="centerX" id="76k-nz-xPq"/>
                             <constraint firstItem="Ofw-9V-0cW" firstAttribute="leading" secondItem="QF9-21-f5W" secondAttribute="trailing" constant="6" id="C8A-2f-yp3"/>
                             <constraint firstItem="Ofw-9V-0cW" firstAttribute="width" secondItem="Ofw-9V-0cW" secondAttribute="height" multiplier="4:3" id="F18-0J-eVj"/>
-                            <constraint firstItem="nsK-OB-kxs" firstAttribute="width" secondItem="nsK-OB-kxs" secondAttribute="height" multiplier="4:3" id="FUq-Fe-Wk1"/>
                             <constraint firstItem="QF9-21-f5W" firstAttribute="leading" secondItem="Iby-S9-kH6" secondAttribute="leading" constant="51" id="JRg-AD-opE"/>
                             <constraint firstItem="Iby-S9-kH6" firstAttribute="trailing" secondItem="bf4-jb-3Ae" secondAttribute="trailing" constant="276" id="KFI-GU-TFE"/>
                             <constraint firstItem="JuK-nd-2A5" firstAttribute="centerX" secondItem="uPK-FB-wgR" secondAttribute="centerX" id="Oj6-Ab-zsf"/>
+                            <constraint firstItem="SlV-ng-5IE" firstAttribute="top" secondItem="uPK-FB-wgR" secondAttribute="bottom" constant="7.3333333333333712" id="TUm-w9-lsb"/>
                             <constraint firstItem="y3L-Qf-YLN" firstAttribute="leading" secondItem="Iby-S9-kH6" secondAttribute="leading" constant="14" id="a1V-sx-BHZ"/>
                             <constraint firstItem="JUp-7B-eOw" firstAttribute="leading" secondItem="iDM-gq-85j" secondAttribute="leading" id="bdj-Cj-BLA"/>
                             <constraint firstItem="y3L-Qf-YLN" firstAttribute="centerX" secondItem="JUp-7B-eOw" secondAttribute="centerX" id="dY6-QH-gwO"/>
@@ -124,6 +121,7 @@
                             <constraint firstItem="Iby-S9-kH6" firstAttribute="bottom" secondItem="QF9-21-f5W" secondAttribute="bottom" constant="33" id="foW-Fw-1ot"/>
                             <constraint firstItem="iDM-gq-85j" firstAttribute="leading" secondItem="uPK-FB-wgR" secondAttribute="leading" id="hUH-fo-MNf"/>
                             <constraint firstItem="bf4-jb-3Ae" firstAttribute="top" secondItem="y3L-Qf-YLN" secondAttribute="bottom" constant="40" id="n40-1m-Q8t"/>
+                            <constraint firstItem="SlV-ng-5IE" firstAttribute="leading" secondItem="uPK-FB-wgR" secondAttribute="leading" id="oOl-qX-1KN"/>
                             <constraint firstItem="JUp-7B-eOw" firstAttribute="leading" secondItem="Iby-S9-kH6" secondAttribute="leading" constant="15" id="p3R-d0-uu7"/>
                             <constraint firstItem="y3L-Qf-YLN" firstAttribute="top" secondItem="JuK-nd-2A5" secondAttribute="bottom" constant="34" id="uFk-cP-HW8"/>
                             <constraint firstItem="QF9-21-f5W" firstAttribute="centerY" secondItem="Ofw-9V-0cW" secondAttribute="centerY" id="uIu-qB-R9a"/>
@@ -136,13 +134,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="75y-8k-1w2"/>
                     <connections>
+                        <outlet property="lblValidation" destination="SlV-ng-5IE" id="E1o-Gj-aFM"/>
                         <outlet property="txtEmail" destination="JUp-7B-eOw" id="tPi-WM-FQb"/>
                         <outlet property="txtPassword" destination="iDM-gq-85j" id="eez-7f-vXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDQ-5d-dUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089.8550724637685" y="-666.29464285714278"/>
+            <point key="canvasLocation" x="2088.7850467289718" y="-666.7386609071275"/>
         </scene>
         <!--Register Screen Controller-->
         <scene sceneID="mbb-8j-fpi">
@@ -566,7 +565,7 @@
         <!--Home Screen-->
         <scene sceneID="b5V-QP-aYY">
             <objects>
-                <viewController title="Home Screen" id="0lV-47-5HV" customClass="HomeScreenController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenControllerVC" title="Home Screen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0lV-47-5HV" customClass="HomeScreenController" customModule="Expensify" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wUB-Gw-Yep">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

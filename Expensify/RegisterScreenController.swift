@@ -3,7 +3,7 @@
 //  Expensify
 //
 //  Created by user207261 on 7/19/22.
-//
+// Registration controller manages all registration activities
 
 import UIKit
 import Firebase
@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class RegisterScreenController: UIViewController {
 
-    
+    //references Iboutlet used in register screen
     @IBOutlet weak var txtName: UITextField!
     
     @IBOutlet weak var txtEmail: UITextField!
@@ -21,15 +21,13 @@ class RegisterScreenController: UIViewController {
     
     @IBOutlet weak var lblValidation: UILabel!
     
-    @ObservedObject var model = ViewModel()
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Settimgs for hiding keyboard while click outside
+        //Settings for hiding keyboard while click outside
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         self.view.addGestureRecognizer(tap)
+        
     }
     
     
@@ -39,6 +37,7 @@ class RegisterScreenController: UIViewController {
        self.view.endEditing(true)
       }
 
+    //Registration event to register user in firebase authentication
     @IBAction func Register(_ sender: Any) {
         let name : String? = (self.txtName.text?.trimmingCharacters(in:     CharacterSet.whitespacesAndNewlines))!
            let email : String? = (self.txtEmail.text?.trimmingCharacters(in:     CharacterSet.whitespacesAndNewlines))!
@@ -72,8 +71,22 @@ class RegisterScreenController: UIViewController {
           
         if validationStatus == 0
         {
-         lblValidation.text = ""
-       //  model.addUser(name: name! , email: email! , password: password!)
+        let signUpManager = FirebaseAuthManager()
+        lblValidation.text = ""
+            signUpManager.createUser(email: email! , password: password!) {[weak self] (success) in
+                    guard let `self` = self else { return }
+                    var message: String = ""
+                    if (success) {
+                        message = "Sucessfully registered."
+                        self.txtName.text = ""
+                        self.txtEmail.text = ""
+                        self.txtPassword.text = ""
+
+                    } else {
+                        message = "There was an error."
+                    }
+                self.lblValidation.text = message
+            }
         }
         
     }
