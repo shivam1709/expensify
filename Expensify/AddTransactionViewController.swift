@@ -14,6 +14,8 @@ class AddTransactionViewController: UIViewController {
 
     @IBOutlet weak var incomeButton: UIButton!
     let db = Firestore.firestore()
+    var expense = false
+    var income = false
     @IBOutlet weak var expenseButton: UIButton!
     
     @IBOutlet weak var categoriesDropDoen: UIView!
@@ -40,6 +42,8 @@ class AddTransactionViewController: UIViewController {
     
     let date = Date()
     
+    
+    @IBOutlet weak var vaildatioLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         listOfCategories.text = "Select Any Category"
@@ -107,9 +111,31 @@ class AddTransactionViewController: UIViewController {
     }
     
     @IBAction func addBtn(_ sender: Any) {
+        if (amountField.text == "" ||
+                listOfCategories.text == "" ||
+                datePickerTextField.text == "" ||
+                (income == false && expense == false)
+        ){
+           
+           vaildatioLabel.text = "Please fill all fields"
+        }else{
+           
+            vaildatioLabel.text = "Your expense is added"
+            vaildatioLabel.textColor = UIColor.green
         addDataToFb();
+        
+        }
     }
-    
+//    if(income == false || expense == false)
+//    {
+//        vaildatioLabel.text = "Please fill all fields"
+//    }
+//    if(income == true || expense == true)
+//    {
+//        vaildatioLabel.text = "Your expense is added"
+//        vaildatioLabel.textColor = UIColor.green
+//        addDataToFb();
+//    }
     @IBAction func incomeBtn(_ sender: UIButton) {
         if(sender.isSelected){
             sender.isSelected = false
@@ -117,6 +143,8 @@ class AddTransactionViewController: UIViewController {
         }else{
             sender.isSelected = true
             expenseButton.isSelected = false
+            expense =  false
+           income = true
         }
     }
     
@@ -127,20 +155,25 @@ class AddTransactionViewController: UIViewController {
         }else{
             sender.isSelected = true
             incomeButton.isSelected = false
+            expense =  true
+           income = false
         }
     }
     
   		
 
     func addDataToFb() {
-        db.collection("user").document("userData").setData([
+        
+        
+        
+        db.collection("user").document().setData([
             "name": "sshivam",
             "amount":amountField.text,
-            "email": "test@test.com",
-            "income":true,
-            "expense": false,
-            "category":"Fuel",
-            "date": "01/07/2022",
+            "email": "shivam@test.com",
+            "income":income,
+            "expense": expense,
+            "category":listOfCategories.text,
+            "date":datePickerTextField.text ,
         ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
