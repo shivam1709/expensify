@@ -81,9 +81,20 @@ class RegisterScreenController: UIViewController {
                         self.txtName.text = ""
                         self.txtEmail.text = ""
                         self.txtPassword.text = ""
+                        //Add uid to user document after successfull registration
+                        let user = Auth.auth().currentUser
+                        if let user = user {
+                            signUpManager.addUserToFb(uid: user.uid)
+                        }
+                        
+                        //Redirection code to redirect from register scene to Home scene after successfull registration
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeScreenControllerVC") as! UIViewController
+                        newViewController.modalPresentationStyle = .fullScreen
+                        self.present(newViewController, animated:false, completion:nil)
 
                     } else {
-                        message = "There was an error."
+                        message = "Error. Email already exists."
                     }
                 self.lblValidation.text = message
             }

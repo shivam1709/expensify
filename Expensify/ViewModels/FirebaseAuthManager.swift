@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class FirebaseAuthManager {
     
@@ -34,5 +35,19 @@ class FirebaseAuthManager {
                 completionBlock(true)
             }
         }
-    }    
+    }
+    
+    //Add uid to user document after registration
+    func addUserToFb(uid : String) {
+        let db = Firestore.firestore()
+        db.collection("user").document().setData([
+            "UID": uid,
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
 }

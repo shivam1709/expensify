@@ -92,6 +92,9 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="gotoRegister:" destination="W7c-PN-h8s" eventType="touchDown" id="w87-3t-K1F"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlV-ng-5IE">
                                 <rect key="frame" x="15" y="636" width="0.0" height="0.0"/>
@@ -147,7 +150,7 @@
         <!--Register Screen Controller-->
         <scene sceneID="mbb-8j-fpi">
             <objects>
-                <viewController id="nfW-34-EDp" customClass="RegisterScreenController" customModule="Expensify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RegisterScreenControllerVC" storyboardIdentifier="RegisterScreenControllerVC" id="nfW-34-EDp" customClass="RegisterScreenController" customModule="Expensify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybq-60-1ri">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -31,6 +31,14 @@ class LoginScreenController: UIViewController {
        self.view.endEditing(true)
       }
 
+    //For navigating to to register scene from login scene
+    @IBAction func gotoRegister(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "RegisterScreenControllerVC") as! UIViewController
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated:false, completion:nil)
+    }
+    
     //Login event to authorize user and redirect to home screen
     @IBAction func Login(_ sender: Any) {
            let email : String? = (self.txtEmail.text?.trimmingCharacters(in:     CharacterSet.whitespacesAndNewlines))!
@@ -71,10 +79,6 @@ class LoginScreenController: UIViewController {
                     }
                 self.lblValidation.text = message
                 
-                //let user = Auth.auth().currentUser
-                //if let user = user {
-                    //let uid = user.uid
-                //}
             }
         }
       }
