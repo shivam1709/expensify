@@ -3,32 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>369817107313-4lqr853cbbqoe6m0qoho5phnmk5hqkap.apps.googleusercontent.com</string>
+	<string>384667236778-j0amng0iq9c24dcm7itbsmcelt073si0.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.369817107313-4lqr853cbbqoe6m0qoho5phnmk5hqkap</string>
+	<string>com.googleusercontent.apps.384667236778-j0amng0iq9c24dcm7itbsmcelt073si0</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAgnL17DOhbJy4tKH6e-85SbZAkq05YxRg</string>
+	<string>AIzaSyBqA_PyU-Fwg1ApefO0cJnOMYk1PR6yZEQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>369817107313</string>
+	<string>384667236778</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.shivam.sampleApp.Expensify</string>
 	<key>PROJECT_ID</key>
-	<string>expensifyfb</string>
+	<string>expensifydb-d8306</string>
 	<key>STORAGE_BUCKET</key>
-	<string>expensifyfb.appspot.com</string>
+	<string>expensifydb-d8306.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:369817107313:ios:d73c8469d4459c479754d0</string>
+	<string>1:384667236778:ios:d832eef7cfa43f469b53d3</string>
 </dict>
 </plist>
