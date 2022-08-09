@@ -16,10 +16,11 @@
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
 		A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */; };
+		AD6580B028A30BC8001FD622 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6580AF28A30BC8001FD622 /* CollectionViewCell.swift */; };
+		AD6580B328A30BE8001FD622 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6580B228A30BE8001FD622 /* HomeScreenController.swift */; };
 		AD8CDA77289FE71400C9D98F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
-		ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */; };
 		ADD49EB12885A6F200EE2CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EAF2885A6F200EE2CAB /* Main.storyboard */; };
 		ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */; };
 		ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB52885A6F300EE2CAB /* Assets.xcassets */; };
@@ -37,11 +38,12 @@
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		AD6580AF28A30BC8001FD622 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../../../../Downloads/CollectionViewCell.swift; sourceTree = "<group>"; };
+		AD6580B228A30BE8001FD622 /* HomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenController.swift; path = ../../../../Downloads/HomeScreenController.swift; sourceTree = "<group>"; };
 		AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
 		ADD49EB02885A6F200EE2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADD49EB32885A6F200EE2CAB /* Expensify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expensify.xcdatamodel; sourceTree = "<group>"; };
 		ADD49EB52885A6F300EE2CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,13 +113,14 @@
 			children = (
 				A4FC9D63289379FC007D46A8 /* ViewModels */,
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
-				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
-				ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */,
 				ADD49EAF2885A6F200EE2CAB /* Main.storyboard */,
+				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
 				A40EA2D32891820C0015FAA6 /* ViewController.swift */,
+				AD6580B228A30BE8001FD622 /* HomeScreenController.swift */,
 				A40EA2D9289184D30015FAA6 /* TableViewCell.xib */,
 				A40EA2DC289184E50015FAA6 /* TableViewCell.swift */,
 				A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */,
+				AD6580AF28A30BC8001FD622 /* CollectionViewCell.swift */,
 				A4DEDCD32887142A00A45130 /* LoginScreenController.swift */,
 				A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
@@ -246,9 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */,
-				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
+				AD6580B028A30BC8001FD622 /* CollectionViewCell.swift in Sources */,
 				A4C758172896342300211B8A /* Validation.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
+				AD6580B328A30BE8001FD622 /* HomeScreenController.swift in Sources */,
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
 				A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */,
 				A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */,

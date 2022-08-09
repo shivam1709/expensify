@@ -9,6 +9,7 @@ import UIKit
 import DropDown
 import FirebaseFirestore
 import Foundation
+import FirebaseAuth
 
 class AddTransactionViewController: UIViewController {
 
@@ -163,18 +164,19 @@ class AddTransactionViewController: UIViewController {
   		
 
     func addDataToFb() {
-        
+        let user = Auth.auth().currentUser
         
         
         db.collection("user").document().setData([
-            "name": "sshivam",
+            "name": user!.displayName,
             "amount":amountField.text,
-            "email": "shivam@test.com",
+            "email": user!.email,
             "income":income,
             "expense": expense,
             "category":listOfCategories.text,
             "date":datePickerTextField.text ,
-        ]) { err in
+            "UID":user!.uid
+	        ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
