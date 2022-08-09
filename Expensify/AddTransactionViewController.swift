@@ -12,19 +12,36 @@ import Foundation
 import FirebaseAuth
 
 class AddTransactionViewController: UIViewController {
-
+    
+    // All the Outlets
     @IBOutlet weak var incomeButton: UIButton!
-    let db = Firestore.firestore()
-    var expense = false
-    var income = false
     @IBOutlet weak var expenseButton: UIButton!
     
     @IBOutlet weak var categoriesDropDoen: UIView!
     @IBOutlet weak var listOfCategories: UILabel!
     
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var cancelButtons: UIButton!
+  
+    @IBOutlet weak var amountField: UITextField!
+    
+    
+    @IBOutlet weak var     datePickerTextField: UITextField!
+    
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    @IBOutlet weak var vaildatioLabel: UILabel!
+    
+    // making a object of Firebase
+    let db = Firestore.firestore()
+    
+    //bool to check radio button is selected or not
+    var expense = false
+    var income = false
+    
+    // object of dropdown
     let dropDown = DropDown()
+    
+    //number of category array
     let categoriesArray = ["Entertainment",
         "Groceries",
         "Rent",
@@ -36,31 +53,12 @@ class AddTransactionViewController: UIViewController {
         "Shopping",
         "Others"
     ]
-    
-    @IBOutlet weak var amountField: UITextField!
-    
-    @IBOutlet weak var 	datePickerTextField: UITextField!
-    
-    let date = Date()
-    
-    
-    @IBOutlet weak var vaildatioLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Code for selecting any category
         listOfCategories.text = "Select Any Category"
         dropDown.anchorView = categoriesDropDoen
-        cancelButtons.layer.cornerRadius = 10
-        cancelButtons.clipsToBounds = true
-        let cancelButton = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        cancelButton.layer.borderWidth = 10
-        cancelButton.layer.borderColor = UIColor.black.cgColor
-        
-        let tapRecognizer = UITapGestureRecognizer()
-        tapRecognizer.addTarget(self, action: #selector(AddTransactionViewController.didTapView))
-        self.view.addGestureRecognizer(tapRecognizer)
-        
-        // tap gesture to dismiss keyboard
-        
         dropDown.dataSource = categoriesArray
         
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)! )
@@ -71,7 +69,15 @@ class AddTransactionViewController: UIViewController {
             print("Selected item: \(item) at index: \(index)")
             self.listOfCategories.text = categoriesArray[index]
         }
-      
+        
+       
+        
+        //code for tap gesture to dismiss keyboard
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(AddTransactionViewController.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
+        
+        // date picker code
         self.datePickerTextField.datePicker(target: self,
                                   doneAction: #selector(doneAction),
                                   cancelAction: #selector(cancelAction),
@@ -79,11 +85,12 @@ class AddTransactionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // date picker cancel button action
     @objc
         func cancelAction() {
             self.datePickerTextField.resignFirstResponder()
         }
-
+    // date picker done button action
         @objc
         func doneAction() {
             if let datePickerView = self.datePickerTextField.inputView as? UIDatePicker {
@@ -107,14 +114,19 @@ class AddTransactionViewController: UIViewController {
             textField.resignFirstResponder() // dismiss keyboard
             return true
         }
+    // drop down button pressed
     @IBAction func dropDownBtn(_ sender: Any) {
         dropDown.show()
     }
     
+    
+    //when a user adds the expense
     @IBAction func addBtn(_ sender: Any) {
+        
+        //validation to check if empty or not
         if (amountField.text == "" ||
                 listOfCategories.text == "" ||
-                datePickerTextField.text == "" ||
+                datePickerTextField.text == "" || descriptionTextField.text == "" ||
                 (income == false && expense == false)
         ){
            
@@ -127,16 +139,8 @@ class AddTransactionViewController: UIViewController {
         
         }
     }
-//    if(income == false || expense == false)
-//    {
-//        vaildatioLabel.text = "Please fill all fields"
-//    }
-//    if(income == true || expense == true)
-//    {
-//        vaildatioLabel.text = "Your expense is added"
-//        vaildatioLabel.textColor = UIColor.green
-//        addDataToFb();
-//    }
+    
+    // income radio button
     @IBAction func incomeBtn(_ sender: UIButton) {
         if(sender.isSelected){
             sender.isSelected = false
@@ -149,6 +153,7 @@ class AddTransactionViewController: UIViewController {
         }
     }
     
+    // expense radio button
     @IBAction func expenseBtn(_ sender: UIButton) {
         if(sender.isSelected){
             sender.isSelected = false
@@ -161,12 +166,18 @@ class AddTransactionViewController: UIViewController {
         }
     }
     
-  		
-
+  		// clear button fuction to clear ecery field
+    @IBAction func clearButton(_ sender: Any) {
+        listOfCategories.text = "";
+        income = false;
+        expense = false;
+        datePickerTextField.text = "";
+        descriptionTextField.text = "";
+        amountField.text = ""
+    }
+    //add button click function to add the data to firebase
     func addDataToFb() {
         let user = Auth.auth().currentUser
-        
-        
         db.collection("user").document().setData([
             "name": user!.displayName,
             "amount":amountField.text,
@@ -175,16 +186,26 @@ class AddTransactionViewController: UIViewController {
             "expense": expense,
             "category":listOfCategories.text,
             "date":datePickerTextField.text ,
+            "description":descriptionTextField.text,
             "UID":user!.uid
+            
 	        ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
                 print("Document successfully written!")
+                
+                //navigating to home screen
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated:false, completion:nil)
             }
         }
     }
 }
+    
+    // date picker code 
     extension UITextField {
         func datePicker<T>(target: T,
                            doneAction: Selector,

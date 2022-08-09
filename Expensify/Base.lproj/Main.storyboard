@@ -310,7 +310,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="mt7-Ky-djt">
             <objects>
-                <tabBarController id="r6M-nq-pvu" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="r6M-nq-pvu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TLX-qA-q7J"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ly0-zi-nj3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -899,9 +899,12 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.66666666669999997" green="0.66670483349999998" blue="0.66658556459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="Cancel">
+                                        <state key="normal" title="Clear">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clearButton:" destination="lfI-G7-gyr" eventType="touchUpInside" id="2rL-Wn-968"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -954,9 +957,9 @@
                     <connections>
                         <outlet property="addButton" destination="OFc-Za-SPT" id="Ngr-wg-rPp"/>
                         <outlet property="amountField" destination="dwo-xq-vyq" id="ojW-bl-Guq"/>
-                        <outlet property="cancelButtons" destination="SLO-W6-qqQ" id="rHW-FB-le6"/>
                         <outlet property="categoriesDropDoen" destination="bgF-fT-moF" id="vMK-D1-Pih"/>
                         <outlet property="datePickerTextField" destination="VH8-Ia-oyg" id="kg1-NI-B2b"/>
+                        <outlet property="descriptionTextField" destination="JI6-mr-VMG" id="bEQ-sR-Hze"/>
                         <outlet property="expenseButton" destination="M0f-XG-uVn" id="WyW-eb-LM4"/>
                         <outlet property="incomeButton" destination="IYg-Eh-gX0" id="boa-r6-MeS"/>
                         <outlet property="listOfCategories" destination="Dg3-Fm-g76" id="Ji7-tH-Txt"/>
