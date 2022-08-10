@@ -7,16 +7,20 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     let monthArr:[String] = ["January","February","March","April","May","June", "July", "August", "September", "October", "November", "December"]
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var myCollectionView: UICollectionView!
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let user = Auth.auth().currentUser
+        nameLabel.text = user!.email
         // Do any additional setup after loading the view.
         self.myCollectionView.delegate = self
         self.myCollectionView.dataSource = self

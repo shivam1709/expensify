@@ -716,6 +716,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="o6S-a3-rxE"/>
                     <connections>
                         <outlet property="myCollectionView" destination="lxi-Bl-1if" id="3mc-Nk-NVm"/>
+                        <outlet property="nameLabel" destination="SWZ-WF-kwH" id="8jY-rg-j4J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXf-wU-JFe" sceneMemberID="firstResponder"/>

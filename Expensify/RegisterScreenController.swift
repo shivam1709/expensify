@@ -89,7 +89,7 @@ class RegisterScreenController: UIViewController {
                         
                         //Redirection code to redirect from register scene to Home scene after successfull registration
                         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeScreenController") as! UIViewController
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
                         newViewController.modalPresentationStyle = .fullScreen
                         self.present(newViewController, animated:false, completion:nil)
 
