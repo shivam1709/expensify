@@ -61,7 +61,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="W7c-PN-h8s" eventType="touchDown" id="gv9-AA-6X5"/>
-                                    <segue destination="r6M-nq-pvu" kind="presentation" modalPresentationStyle="fullScreen" id="MKV-8z-fGO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuK-nd-2A5">
@@ -549,7 +548,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="mt7-Ky-djt">
             <objects>
-                <tabBarController id="r6M-nq-pvu" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="tabbarVC" storyboardIdentifier="tabbarVC" id="r6M-nq-pvu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TLX-qA-q7J"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ly0-zi-nj3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
