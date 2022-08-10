@@ -71,7 +71,11 @@ class LoginScreenController: UIViewController {
                         message = "You are sucessfully logged in."
                         //Redirection code to redirect from login scene to Home scene after successfull login
                         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+<<<<<<< Updated upstream
                         let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabbarVC") as! UIViewController
+=======
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
+>>>>>>> Stashed changes
                         newViewController.modalPresentationStyle = .fullScreen
                         self.present(newViewController, animated:false, completion:nil)
                     } else {
