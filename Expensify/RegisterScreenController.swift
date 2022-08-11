@@ -83,9 +83,9 @@ class RegisterScreenController: UIViewController {
                         self.txtPassword.text = ""
                         //Add uid to user document after successfull registration
                         let user = Auth.auth().currentUser
-                        if let user = user {
-                            signUpManager.addUserToFb(uid: user.uid)
-                        }
+                        //if let user = user {
+                        //    signUpManager.addUserToFb(uid: user.uid)
+                        //}
                         
                         //Redirection code to redirect from register scene to Home scene after successfull registration
                         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

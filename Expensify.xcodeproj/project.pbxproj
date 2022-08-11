@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054AB93C28A59BBC00AF5BE0 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054AB93B28A59BBC00AF5BE0 /* TransactionModel.swift */; };
 		62D129DD934209F501ED4297 /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B52956EAE786467FD3AE509 /* Pods_Expensify.framework */; };
 		A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D32891820C0015FAA6 /* ViewController.swift */; };
 		A40EA2DA289184D30015FAA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40EA2D9289184D30015FAA6 /* TableViewCell.xib */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		054AB93B28A59BBC00AF5BE0 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		0F3A49C76FA6FBE063A8355B /* Pods-Expensify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.debug.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.debug.xcconfig"; sourceTree = "<group>"; };
 		1B52956EAE786467FD3AE509 /* Pods_Expensify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expensify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40EA2D32891820C0015FAA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				A4C758162896342300211B8A /* Validation.swift */,
 				A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */,
+				054AB93B28A59BBC00AF5BE0 /* TransactionModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
 				A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */,
 				A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */,
+				054AB93C28A59BBC00AF5BE0 /* TransactionModel.swift in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */,
 				A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */,

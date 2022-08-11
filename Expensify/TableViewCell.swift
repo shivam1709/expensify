@@ -22,5 +22,10 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func configureCell(transaction: TransactionModel){
+        labelCell.text = transaction.category
+        labelPriceCell.text = transaction.amount
+        
+    }
     
 }
