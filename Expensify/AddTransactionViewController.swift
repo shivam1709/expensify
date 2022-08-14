@@ -126,7 +126,7 @@ class AddTransactionViewController: UIViewController {
         //validation to check if empty or not
         if (amountField.text == "" ||
                 listOfCategories.text == "" ||
-                datePickerTextField.text == "" || descriptionTextField.text == "" ||
+                datePickerTextField.text == "" || 
                 (income == false && expense == false)
         ){
            

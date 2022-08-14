@@ -153,11 +153,11 @@
             <objects>
                 <viewController restorationIdentifier="RegisterScreenControllerVC" storyboardIdentifier="RegisterScreenControllerVC" id="nfW-34-EDp" customClass="RegisterScreenController" customModule="Expensify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybq-60-1ri">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-OT-3VW">
-                                <rect key="frame" x="-170" y="13" width="754" height="129.5"/>
+                                <rect key="frame" x="86" y="101" width="242" height="41.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Qr-OT-3VW" secondAttribute="height" multiplier="250:43" id="nES-YM-Zea"/>
                                 </constraints>
@@ -222,7 +222,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="acG-VO-yzA">
-                                <rect key="frame" x="52" y="765" width="290.5" height="32"/>
+                                <rect key="frame" x="52" y="819" width="290.5" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nr-qS-NR4">
                                         <rect key="frame" x="0.0" y="0.0" width="232.5" height="32"/>
@@ -318,9 +318,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="iki-NF-atF" kind="relationship" relationship="viewControllers" id="W4d-az-GBF"/>
-                        <segue destination="lfI-G7-gyr" kind="relationship" relationship="viewControllers" id="ADd-uV-gdM"/>
-                        <segue destination="VUk-77-v5d" kind="relationship" relationship="viewControllers" id="byi-ck-e65"/>
+                        <segue destination="iki-NF-atF" kind="relationship" relationship="viewControllers" id="SMO-aX-y3H"/>
+                        <segue destination="lfI-G7-gyr" kind="relationship" relationship="viewControllers" id="XOI-DU-lKu"/>
+                        <segue destination="VUk-77-v5d" kind="relationship" relationship="viewControllers" id="UWw-mw-F9t"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0S-tu-12W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -330,7 +330,7 @@
         <!--Summary-->
         <scene sceneID="p4S-dU-qTH">
             <objects>
-                <viewController id="VUk-77-v5d" customClass="ViewController" customModule="Expensify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VUk-77-v5d" customClass="SummaryScreenController" customModule="Expensify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SOC-85-RzW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,8 +377,8 @@
                                     <constraint firstAttribute="width" constant="336" id="sPb-OY-YeI"/>
                                 </constraints>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/07/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwt-6G-4y4">
-                                <rect key="frame" x="82" y="258" width="94" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="27/07/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwt-6G-4y4">
+                                <rect key="frame" x="82" y="258" width="200" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7Pe-Iy-t97"/>
                                     <constraint firstAttribute="width" constant="94" id="QTZ-U4-ukZ"/>
@@ -409,6 +409,8 @@
                     <tabBarItem key="tabBarItem" title="Summary" image="calendar" catalog="system" id="jei-UA-Tpc"/>
                     <connections>
                         <outlet property="Table1view" destination="bXd-S3-ijG" id="Tdp-5g-9Jq"/>
+                        <outlet property="labelBalance" destination="mlA-xK-hdv" id="owS-Ou-Tov"/>
+                        <outlet property="labelDate" destination="Cwt-6G-4y4" id="bgz-nl-mok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKN-Ma-P9V" sceneMemberID="firstResponder"/>
@@ -602,7 +604,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxi-Bl-1if">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lxi-Bl-1if">
                                 <rect key="frame" x="20" y="540" width="374" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -661,19 +663,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj7-ow-3MC">
-                                <rect key="frame" x="324" y="54" width="70" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="2AA-jZ-2VR"/>
-                                    <constraint firstAttribute="height" constant="36" id="R1g-rb-PZn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Log Out"/>
-                                <connections>
-                                    <action selector="logOut:" destination="iki-NF-atF" eventType="touchUpInside" id="abh-5I-2fZ"/>
-                                    <segue destination="nfW-34-EDp" kind="presentation" id="aNT-Tv-Fsl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wuz-I4-fXe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -683,13 +672,11 @@
                             <constraint firstItem="SWZ-WF-kwH" firstAttribute="leading" secondItem="wuz-I4-fXe" secondAttribute="leading" constant="20" id="7R4-S4-GoQ"/>
                             <constraint firstItem="wuz-I4-fXe" firstAttribute="trailing" secondItem="wLU-Ry-BM0" secondAttribute="trailing" constant="20" id="BUZ-lK-qcn"/>
                             <constraint firstItem="wLU-Ry-BM0" firstAttribute="top" secondItem="SWZ-WF-kwH" secondAttribute="bottom" constant="10" id="Fyh-3g-V6p"/>
-                            <constraint firstAttribute="trailing" secondItem="Zj7-ow-3MC" secondAttribute="trailing" constant="20" id="Lrr-pL-vpB"/>
                             <constraint firstItem="amk-Fc-BbP" firstAttribute="top" secondItem="wLU-Ry-BM0" secondAttribute="bottom" constant="5" id="OzQ-xk-bdS"/>
                             <constraint firstItem="lxi-Bl-1if" firstAttribute="centerX" secondItem="rIb-XE-l7B" secondAttribute="centerX" id="bBc-4J-WHc"/>
                             <constraint firstItem="lxi-Bl-1if" firstAttribute="leading" secondItem="wuz-I4-fXe" secondAttribute="leading" constant="20" id="pIM-0o-htw"/>
                             <constraint firstItem="wLU-Ry-BM0" firstAttribute="leading" secondItem="wuz-I4-fXe" secondAttribute="leading" constant="20" id="tay-SK-PP0"/>
                             <constraint firstItem="wLU-Ry-BM0" firstAttribute="centerX" secondItem="rIb-XE-l7B" secondAttribute="centerX" id="u0T-v1-ja6"/>
-                            <constraint firstItem="Zj7-ow-3MC" firstAttribute="top" secondItem="wuz-I4-fXe" secondAttribute="top" constant="10" id="wFy-JP-oBI"/>
                             <constraint firstItem="amk-Fc-BbP" firstAttribute="leading" secondItem="wuz-I4-fXe" secondAttribute="leading" constant="20" id="yVZ-II-ZtG"/>
                         </constraints>
                     </view>
@@ -824,7 +811,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8J5-Z7-jvs">
                                 <rect key="frame" x="25" y="363" width="364" height="40"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select A Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-Ia-oyg">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select A Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-Ia-oyg">
                                         <rect key="frame" x="0.0" y="2" width="359" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.95823985339999995" green="0.83428126570000005" blue="0.43200010059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -842,7 +829,7 @@
                                 <rect key="frame" x="25" y="423" width="364" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Add Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JI6-mr-VMG">
-                                        <rect key="frame" x="0.0" y="-1" width="378" height="120"/>
+                                        <rect key="frame" x="0.0" y="-1" width="364" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.046994753180000001" green="0.051135398450000001" blue="0.05913383514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -937,7 +924,7 @@
                             <constraint firstItem="H47-dP-ZbU" firstAttribute="leading" secondItem="xDR-HI-DzI" secondAttribute="leading" constant="30" id="zcD-9c-ekJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Transaction" selectedImage="plus" catalog="system" id="Was-Yp-vpg"/>
+                    <tabBarItem key="tabBarItem" title="Add Transaction" image="plus" catalog="system" id="Was-Yp-vpg"/>
                     <connections>
                         <outlet property="addButton" destination="OFc-Za-SPT" id="Ngr-wg-rPp"/>
                         <outlet property="amountField" destination="dwo-xq-vyq" id="ojW-bl-Guq"/>
@@ -955,9 +942,6 @@
             <point key="canvasLocation" x="1221.7391304347827" y="33.482142857142854"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="aNT-Tv-Fsl"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>

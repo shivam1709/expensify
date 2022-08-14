@@ -47,6 +47,10 @@ class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollec
         if user?.displayName != nil{
             self.lblName.text = user!.displayName
         }
+        else{
+            if user?.email != nil{self.lblName.text = user!.email}
+            
+        }
         
         //reading data from database using function
         fetchData()
@@ -179,23 +183,6 @@ class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollec
             
     }
     
-      @IBAction  func logOut(_ sender: Any) {
-        // call from any screen
-        
-        do { try Auth.auth().signOut() }
-        catch { print("already logged out") }
-        
-        navigationController?.popToRootViewController(animated: true)
-    }
-    /*func logoutUser() {
-        // call from any screen
-        
-        do { try Auth.auth().signOut() }
-        catch { print("already logged out") }
-        
-        navigationController?.popToRootViewController(animated: true)
-    }**/
-
     
 
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62D129DD934209F501ED4297 /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B52956EAE786467FD3AE509 /* Pods_Expensify.framework */; };
-		A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D32891820C0015FAA6 /* ViewController.swift */; };
+		A40EA2D42891820D0015FAA6 /* SummaryScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2D32891820C0015FAA6 /* SummaryScreenController.swift */; };
 		A40EA2DA289184D30015FAA6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40EA2D9289184D30015FAA6 /* TableViewCell.xib */; };
 		A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40EA2DC289184E50015FAA6 /* TableViewCell.swift */; };
 		A4C758172896342300211B8A /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C758162896342300211B8A /* Validation.swift */; };
@@ -16,6 +16,8 @@
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
 		A4E3A9EC289ABBBE006A71E6 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */; };
 		A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */; };
+		AA5DCC7128A9495A00F540AC /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DCC7028A9495A00F540AC /* TransactionModel.swift */; };
+		AA5DCC7428A9496700F540AC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DCC7328A9496700F540AC /* ViewModel.swift */; };
 		AD6580B028A30BC8001FD622 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6580AF28A30BC8001FD622 /* CollectionViewCell.swift */; };
 		AD6580B328A30BE8001FD622 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6580B228A30BE8001FD622 /* HomeScreenController.swift */; };
 		AD8CDA77289FE71400C9D98F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */; };
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		0F3A49C76FA6FBE063A8355B /* Pods-Expensify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.debug.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.debug.xcconfig"; sourceTree = "<group>"; };
 		1B52956EAE786467FD3AE509 /* Pods_Expensify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expensify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40EA2D32891820C0015FAA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A40EA2D32891820C0015FAA6 /* SummaryScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryScreenController.swift; sourceTree = "<group>"; };
 		A40EA2D9289184D30015FAA6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A40EA2DC289184E50015FAA6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A4C758162896342300211B8A /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
 		A4E3A9EB289ABBBE006A71E6 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		AA5DCC7028A9495A00F540AC /* TransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		AA5DCC7328A9496700F540AC /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AD6580AF28A30BC8001FD622 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		AD6580B228A30BE8001FD622 /* HomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
 		AD8CDA76289FE71400C9D98F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		A4FC9D63289379FC007D46A8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AA5DCC7328A9496700F540AC /* ViewModel.swift */,
+				AA5DCC7028A9495A00F540AC /* TransactionModel.swift */,
 				A4C758162896342300211B8A /* Validation.swift */,
 				A4F2B1E228A0091C003E99A6 /* FirebaseAuthManager.swift */,
 			);
@@ -115,7 +121,7 @@
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
 				ADD49EAF2885A6F200EE2CAB /* Main.storyboard */,
 				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
-				A40EA2D32891820C0015FAA6 /* ViewController.swift */,
+				A40EA2D32891820C0015FAA6 /* SummaryScreenController.swift */,
 				AD6580B228A30BE8001FD622 /* HomeScreenController.swift */,
 				A40EA2D9289184D30015FAA6 /* TableViewCell.xib */,
 				A40EA2DC289184E50015FAA6 /* TableViewCell.swift */,
@@ -254,11 +260,13 @@
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
 				AD6580B328A30BE8001FD622 /* HomeScreenController.swift in Sources */,
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
+				AA5DCC7428A9496700F540AC /* ViewModel.swift in Sources */,
 				A4F2B1E328A0091C003E99A6 /* FirebaseAuthManager.swift in Sources */,
 				A40EA2DD289184E50015FAA6 /* TableViewCell.swift in Sources */,
+				AA5DCC7128A9495A00F540AC /* TransactionModel.swift in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */,
-				A40EA2D42891820D0015FAA6 /* ViewController.swift in Sources */,
+				A40EA2D42891820D0015FAA6 /* SummaryScreenController.swift in Sources */,
 				ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

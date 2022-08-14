@@ -76,25 +76,30 @@ class RegisterScreenController: UIViewController {
             signUpManager.createUser(email: email! , password: password!) {[weak self] (success) in
                     guard let `self` = self else { return }
                     var message: String = ""
-                    if (success) {
+                //if registration success
+                    if (success)
+                    {
+                        //updating displayname of user
+                        signUpManager.updateDisplayName(name: name!) {[weak self] (success1) in
+                            guard let `self` = self else { return }
+                        if (success1)
+                        {
                         message = "Sucessfully registered."
                         self.txtName.text = ""
                         self.txtEmail.text = ""
                         self.txtPassword.text = ""
-                        //Add uid to user document after successfull registration
-                        let user = Auth.auth().currentUser
-                        if let user = user {
-                            signUpManager.addUserToFb(uid: user.uid)
-                        }
-                        
+                      
                         //Redirection code to redirect from register scene to Home scene after successfull registration
                         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! UIViewController
                         newViewController.modalPresentationStyle = .fullScreen
                         self.present(newViewController, animated:false, completion:nil)
-
-                    } else {
-                        message = "Error. Email already exists."
+                        }
+                    }
+                    }
+                    else
+                    {
+                    message = "Error. Email already exists."
                     }
                 self.lblValidation.text = message
             }
