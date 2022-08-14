@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
 //  CollectionView
+//  Reading and displaying data from firebase for homescreen   
 //
-//  Created by user206828 on 8/1/22.
 //  Created by Rahul Patel - 8813239
 
 import UIKit
@@ -148,7 +148,7 @@ class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollec
                             
                         }
                         //calculation for month wise expenses for collection view ends
-                        
+                        //Calculation for total expense, total balance and total income starts
                         if(data["income"] != nil){
                             let incomeCheck = data["income"]!
                             if(incomeCheck) as! Bool{
@@ -172,7 +172,7 @@ class HomeScreenController: UIViewController, UICollectionViewDelegate, UICollec
                         }
                         
                         
-                    }
+                    }//Calculation for total expense, total balance and total income ends
                 }
         
             }

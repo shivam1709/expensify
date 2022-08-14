@@ -1,8 +1,8 @@
 //
 //  CollectionViewCell.swift
 //  CollectionView
-//
-//  Created by user206828 on 8/1/22.
+//  class for a cell for the collection view in the Home screen
+//  Created by Rahul Patel.
 //
 
 import UIKit
