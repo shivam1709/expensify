@@ -9,27 +9,33 @@
 /* Begin PBXBuildFile section */
 		A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD32887142A00A45130 /* LoginScreenController.swift */; };
 		A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */; };
+		AD28FC86288879C90037F06F /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28FC85288879C90037F06F /* HomeScreenController.swift */; };
+		AD39209F28885AA1000E41D4 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39209E28885AA1000E41D4 /* AddTransactionViewController.swift */; };
 		ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */; };
 		ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */; };
-		ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */; };
 		ADD49EB12885A6F200EE2CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EAF2885A6F200EE2CAB /* Main.storyboard */; };
 		ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */; };
 		ADD49EB62885A6F300EE2CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB52885A6F300EE2CAB /* Assets.xcassets */; };
 		ADD49EB92885A6F300EE2CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */; };
+		ED91C62A90EAFB324D66EB7F /* Pods_Expensify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E015DCD4AD8ECB0F7B4C2BDA /* Pods_Expensify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61BC583A83E30EE377E7DF7F /* Pods-Expensify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.release.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.release.xcconfig"; sourceTree = "<group>"; };
 		A4DEDCD32887142A00A45130 /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
 		A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenController.swift; sourceTree = "<group>"; };
+		AD28FC85288879C90037F06F /* HomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenController.swift; path = ../../../../Desktop/HomeScreenController.swift; sourceTree = "<group>"; };
+		AD39209E28885AA1000E41D4 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		ADD49EA62885A6F200EE2CAB /* Expensify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
 		ADD49EB02885A6F200EE2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADD49EB32885A6F200EE2CAB /* Expensify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expensify.xcdatamodel; sourceTree = "<group>"; };
 		ADD49EB52885A6F300EE2CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD49EB82885A6F300EE2CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD49EBA2885A6F300EE2CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8DEE78F1028D483D58D4397 /* Pods-Expensify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expensify.debug.xcconfig"; path = "Target Support Files/Pods-Expensify/Pods-Expensify.debug.xcconfig"; sourceTree = "<group>"; };
+		E015DCD4AD8ECB0F7B4C2BDA /* Pods_Expensify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expensify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED91C62A90EAFB324D66EB7F /* Pods_Expensify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1EE743304CB4482A4BFC29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E015DCD4AD8ECB0F7B4C2BDA /* Pods_Expensify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADD49E9D2885A6F200EE2CAB = {
 			isa = PBXGroup;
 			children = (
 				ADD49EA82885A6F200EE2CAB /* Expensify */,
 				ADD49EA72885A6F200EE2CAB /* Products */,
+				F71257E99FF258E5CDE276E7 /* Pods */,
+				5A1EE743304CB4482A4BFC29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +81,26 @@
 			children = (
 				ADD49EA92885A6F200EE2CAB /* AppDelegate.swift */,
 				ADD49EAB2885A6F200EE2CAB /* SceneDelegate.swift */,
-				ADD49EAD2885A6F200EE2CAB /* HomeScreenController.swift */,
 				ADD49EAF2885A6F200EE2CAB /* Main.storyboard */,
 				A4DEDCD6288714D100A45130 /* RegisterScreenController.swift */,
 				A4DEDCD32887142A00A45130 /* LoginScreenController.swift */,
+				AD28FC85288879C90037F06F /* HomeScreenController.swift */,
 				ADD49EB52885A6F300EE2CAB /* Assets.xcassets */,
+				AD39209E28885AA1000E41D4 /* AddTransactionViewController.swift */,
 				ADD49EB72885A6F300EE2CAB /* LaunchScreen.storyboard */,
 				ADD49EBA2885A6F300EE2CAB /* Info.plist */,
 				ADD49EB22885A6F200EE2CAB /* Expensify.xcdatamodeld */,
 			);
 			path = Expensify;
+			sourceTree = "<group>";
+		};
+		F71257E99FF258E5CDE276E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8DEE78F1028D483D58D4397 /* Pods-Expensify.debug.xcconfig */,
+				61BC583A83E30EE377E7DF7F /* Pods-Expensify.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADD49EBD2885A6F300EE2CAB /* Build configuration list for PBXNativeTarget "Expensify" */;
 			buildPhases = (
+				5293DCEC01F46CB5D0D6903D /* [CP] Check Pods Manifest.lock */,
 				ADD49EA22885A6F200EE2CAB /* Sources */,
 				ADD49EA32885A6F200EE2CAB /* Frameworks */,
 				ADD49EA42885A6F200EE2CAB /* Resources */,
+				8446DCB73CE12FD53C1E2E7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,16 +170,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5293DCEC01F46CB5D0D6903D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Expensify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8446DCB73CE12FD53C1E2E7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Expensify/Pods-Expensify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADD49EA22885A6F200EE2CAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD49EAE2885A6F200EE2CAB /* HomeScreenController.swift in Sources */,
 				ADD49EB42885A6F200EE2CAB /* Expensify.xcdatamodeld in Sources */,
 				A4DEDCD7288714D100A45130 /* RegisterScreenController.swift in Sources */,
+				AD28FC86288879C90037F06F /* HomeScreenController.swift in Sources */,
 				ADD49EAA2885A6F200EE2CAB /* AppDelegate.swift in Sources */,
 				A4DEDCD42887142A00A45130 /* LoginScreenController.swift in Sources */,
+				AD39209F28885AA1000E41D4 /* AddTransactionViewController.swift in Sources */,
 				ADD49EAC2885A6F200EE2CAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +367,7 @@
 		};
 		ADD49EBE2885A6F300EE2CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DEE78F1028D483D58D4397 /* Pods-Expensify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +386,7 @@
 		};
 		ADD49EBF2885A6F300EE2CAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BC583A83E30EE377E7DF7F /* Pods-Expensify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
